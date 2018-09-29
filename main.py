@@ -38,7 +38,7 @@ print(test.isnull().sum())
 
 #load text and label
 data['text'] = data['text'].map(lambda x: clean_str(x))
-data['text'] = data['text'].map(lambda x: clean_str(x))
+data['text'] = data['text'].map(lambda x: clean_text(x))
 
 texts = data['text']
 labels = train['author'] 
